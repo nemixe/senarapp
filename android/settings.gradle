@@ -1,0 +1,3 @@
+rootProject.name = 'senarapp'
+
+include ':app'
