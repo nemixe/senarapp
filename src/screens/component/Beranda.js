@@ -10,6 +10,9 @@ import Content from './Content'
 
 export default class Beranda extends Component {
     render() {
+      this.props.navigator.setStyle({
+        navBarHidden: true,
+      });
         return (
           <View>
             <Content name="Beranda" />

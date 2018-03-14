@@ -8,8 +8,7 @@ Navigation.startTabBasedApp({
     tabs:[{
         label: 'Beranda',
         screen: 'senarapp.Beranda',
-        icon: require('../img/swap.png'),
-        title: 'Beranda'
+        icon: require('../img/swap.png')
     },{
         label: 'Transaksi',
         screen: 'senarapp.Transaksi',
@@ -19,11 +18,12 @@ Navigation.startTabBasedApp({
         label: 'Linimasa',
         screen: 'senarapp.Linimasa',
         icon: require('../img/swap.png'),
+        title: 'Linimasa'
     },{
         label: 'Pesan',
         screen: 'senarapp.Pesan',
         icon: require('../img/swap.png'),
-        title: 'Pesan'
+        title: 'Pesan',
     },{
         label: 'Profil',
         screen: 'senarapp.Profil',
@@ -47,5 +47,6 @@ Navigation.startTabBasedApp({
       statusBarColor: '#ebebeb',
       orientation: 'portrait',
       forceTitlesDisplay: true,
+      navBarTitleTextCentered: true,
     }
 })
