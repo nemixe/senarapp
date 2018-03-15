@@ -10,6 +10,9 @@ import Content from './Content'
 
 export default class Pesan extends Component {
     render() {
+      this.props.navigator.setStyle({
+        navBarTranslucent: true
+      });
         return (
           <View>
             <Content name="Pesan" />

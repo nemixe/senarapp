@@ -12,6 +12,7 @@ export default class Beranda extends Component {
     render() {
       this.props.navigator.setStyle({
         navBarHidden: true,
+        navBarTranslucent: true
       });
         return (
           <View>

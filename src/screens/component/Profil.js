@@ -10,6 +10,10 @@ import Content from './Content'
 
 export default class Profil extends Component {
   render() {
+    this.props.navigator.setStyle({
+      navBarHidden: true,
+      drawUnderNavBar: true
+    })
     return (
       <View>
         <Content name="Profil" />

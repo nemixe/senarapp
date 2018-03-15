@@ -16,46 +16,43 @@ function startApp() {
         tabs:[{
             label: 'Beranda',
             screen: 'senarapp.Beranda',
-            icon: require('../img/swap.png')
+            icon: require('../img/Home.png')
         },{
             label: 'Transaksi',
             screen: 'senarapp.Transaksi',
-            icon: require('../img/swap.png'),
+            icon: require('../img/Transaction.png'),
             title: 'Transaksi'
         },{
             label: 'Linimasa',
             screen: 'senarapp.Linimasa',
-            icon: require('../img/swap.png'),
+            icon: require('../img/Timeline.png'),
             title: 'Linimasa'
         },{
             label: 'Pesan',
             screen: 'senarapp.Pesan',
-            icon: require('../img/swap.png'),
+            icon: require('../img/Message.png'),
             title: 'Pesan',
         },{
             label: 'Profil',
             screen: 'senarapp.Profil',
-            icon: require('../img/swap.png'),
+            icon: require('../img/User.png'),
             title: 'Profil'
         }],
         tabsStyle: {
-        tabBarBackgroundColor: '#ffffff',
-        tabBarButtonColor: '#c0c0c0',
-        tabBarSelectedButtonColor: '#6b6b6b',
-        initialTabIndex: 1,
+            initialTabIndex: 1,
         },
         appStyle: {
-        tabBarBackgroundColor: '#ffffff',
-        navBarButtonColor: '#ffffff',
-        tabBarButtonColor: '#c0c0c0',
-        navBarTextColor: '#232323',
-        tabBarSelectedButtonColor: '#c0c0c0',
-        navigationBarColor: '#ffffff',
-        navBarBackgroundColor: '#ffffff',
-        statusBarColor: '#ebebeb',
-        orientation: 'portrait',
-        forceTitlesDisplay: true,
-        navBarTitleTextCentered: true,
+            tabBarBackgroundColor: '#ffffff',
+            tabBarButtonColor: '#c0c0c0',
+            tabBarSelectedButtonColor: '#199587',
+            navBarButtonColor: '#ffffff',
+            navBarTextColor: '#ffffff',
+            navBarBackgroundColor: '#199587',
+            statusBarColor: '#158073',
+            orientation: 'portrait',
+            forceTitlesDisplay: true,
+            navBarTitleTextCentered: true,
+            navBarTranslucent: false,
         }
     })
 }

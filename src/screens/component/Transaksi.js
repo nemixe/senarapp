@@ -10,6 +10,9 @@ import Content from './Content'
 
 export default class Transaksi extends Component {
   render() {
+    this.props.navigator.setStyle({
+      navBarTransparent: true
+    });
     return (
       <View>
         <Content name="Transaksi" />
