@@ -6,17 +6,15 @@
 
 import React, { Component } from 'react'
 import { View } from 'react-native'
+import { Container } from 'native-base'
 import Content from './Content'
 
 export default class Pesan extends Component {
     render() {
-      this.props.navigator.setStyle({
-        navBarTranslucent: true
-      });
         return (
-          <View>
+          <Container>
             <Content name="Pesan" />
-          </View>
+          </Container>
         );
       }
 }

@@ -6,18 +6,18 @@
 
 import React, { Component } from 'react'
 import { View } from 'react-native'
+import { Container } from 'native-base'
 import Content from './Content'
 
 export default class Linimasa extends Component {
+  static navigatorStyle = {
+    navBarHidden: true,
+  };
   render() {
-    this.props.navigator.setStyle({
-      navBarHidden: true,
-      drawUnderNavBar: true,
-    })
     return (
-      <View>
+      <Container>
         <Content name="Linimasa" />
-      </View>
+      </Container>
     );
   }
 }

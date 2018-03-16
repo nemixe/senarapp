@@ -52,7 +52,7 @@ function startApp() {
             orientation: 'portrait',
             forceTitlesDisplay: true,
             navBarTitleTextCentered: true,
-            navBarTranslucent: false,
+            drawUnderTabBar: true
         }
     })
 }

@@ -6,17 +6,15 @@
 
 import React, { Component } from 'react'
 import { View } from 'react-native'
+import { Container } from 'native-base'
 import Content from './Content'
 
 export default class Transaksi extends Component {
   render() {
-    this.props.navigator.setStyle({
-      navBarTransparent: true
-    });
     return (
-      <View>
+      <Container>
         <Content name="Transaksi" />
-      </View>
+      </Container>
     );
   }
 }

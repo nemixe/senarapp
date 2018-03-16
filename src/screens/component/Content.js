@@ -5,7 +5,7 @@ import {
     Text,
     View
   } from 'react-native';
-  
+import { Container } from 'native-base';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -17,7 +17,7 @@ const instructions = Platform.select({
 export default class Content extends Component{
     render(){
         return(
-            <View style={styles.container}>
+            <Container style={styles.container}>
                 <Text style={styles.welcome}>
                     Welcome to React Native!, {this.props.name}!
                 </Text>
@@ -27,7 +27,7 @@ export default class Content extends Component{
                 <Text style={styles.instructions}>
                     {instructions}
                 </Text>
-            </View>
+            </Container>
         )
     }
 }
