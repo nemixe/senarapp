@@ -8,24 +8,16 @@ import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 import { Container, Header, Item, Input, Icon, Button, Text } from 'native-base'
 import Content from './Content'
-import SearchHeader from './subComponent/SearchHeader'
+import Nav from './subComponent/Nav'
+import { topTabs } from 'react-native-navigation'
 
 export default class Beranda extends Component {
-    static navigatorStyle = {
-      navBarHidden: true,
-    };
-
     render() {
         return (
           <Container>
-              <SearchHeader />
+              <Nav name="Beranda"/>
+              <Content name="Beranda" />
           </Container>
         );
       }
 }
-
-const styles = StyleSheet.create({
-  bgSearch:{
-    backgroundColor: '#199587'
-  }
-})

@@ -10,14 +10,9 @@ import { Container } from 'native-base'
 import Content from './Content'
 
 export default class Profil extends Component {
-  static navigatorStyle = {
-    navBarHidden: true,
-  };
   render() {
     return (
-      <Container>
         <Content name="Profil" />
-      </Container>
     );
   }
 }

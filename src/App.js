@@ -11,36 +11,38 @@ Navigation.isAppLaunched().then(appLaunched => {
     new NativeEventsReceiver().appLaunched(startApp);
 })
 
+navigatorStyle = {
+    navBarHidden: true
+}
+
 function startApp() {
     Navigation.startTabBasedApp({
         tabs:[{
             label: 'Beranda',
             screen: 'senarapp.Beranda',
-            icon: require('../img/Home.png')
+            icon: require('../img/Home.png'),
+            navigatorStyle
         },{
             label: 'Transaksi',
             screen: 'senarapp.Transaksi',
             icon: require('../img/Transaction.png'),
-            title: 'Transaksi'
+            navigatorStyle
         },{
             label: 'Linimasa',
             screen: 'senarapp.Linimasa',
             icon: require('../img/Timeline.png'),
-            title: 'Linimasa'
+            navigatorStyle
         },{
             label: 'Pesan',
             screen: 'senarapp.Pesan',
             icon: require('../img/Message.png'),
-            title: 'Pesan',
+            navigatorStyle
         },{
             label: 'Profil',
             screen: 'senarapp.Profil',
             icon: require('../img/User.png'),
-            title: 'Profil'
+            navigatorStyle
         }],
-        tabsStyle: {
-            initialTabIndex: 1,
-        },
         appStyle: {
             tabBarBackgroundColor: '#ffffff',
             tabBarButtonColor: '#c0c0c0',
@@ -52,7 +54,6 @@ function startApp() {
             orientation: 'portrait',
             forceTitlesDisplay: true,
             navBarTitleTextCentered: true,
-            drawUnderTabBar: true
         }
     })
 }

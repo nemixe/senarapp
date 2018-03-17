@@ -17,7 +17,7 @@ const instructions = Platform.select({
 export default class Content extends Component{
     render(){
         return(
-            <Container style={styles.container}>
+            <View style={styles.container}>
                 <Text style={styles.welcome}>
                     Welcome to React Native!, {this.props.name}!
                 </Text>
@@ -27,7 +27,7 @@ export default class Content extends Component{
                 <Text style={styles.instructions}>
                     {instructions}
                 </Text>
-            </Container>
+            </View>
         )
     }
 }
