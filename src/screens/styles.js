@@ -1,9 +1,6 @@
 'use strict'
 let React = require('react-native')
 let { StyleSheet } = React
-const constant = {
-  actionColor: '#fff'
-}
 
 module.exports = StyleSheet.create({
     profil: {
