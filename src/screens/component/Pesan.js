@@ -26,30 +26,30 @@ export default class Pesan extends Component {
     return (
       <Container>
         <Nav name="Pesan" />
-        <Grid style={{paddingLeft:5, paddingRight:5, flex:0}} >
-          <Col size={6}>
-            <Item style={{marginBottom:10, marginTop:10, borderRadius: 17, padding:0}} rounded >
-              <Icon name='ios-search' style={{color: '#c3c3c3'}} />
-              <Input rounded style={{lineHeight:16, height:32, fontSize: 14}} placeholder='Search'/>
-            </Item>
-          </Col>
-          <Col size={1}>
-            <Right>
-            <Icon name='ios-people' style={{color: '#c3c3c3', paddingTop:12}} />
-            </Right>
-          </Col>
-        </Grid>
         <Content>
-        <List>
-            <ItemPesan name="Muhammad Saidul Umam" />
-            <ItemPesan name="Nemixe" />
-            <ItemPesan name="Mas Bro" />
-            <ItemPesan name="Skyrie" />
-            <ItemPesan name="CatBuzz" />
-            <ItemPesan name="Asmorb" />
-            <ItemPesan name="Loctas" />
-            {console.log("List Sukses")}
-          </List>
+          <Grid style={styles.searchPesan} >
+            <Col size={6}>
+              <Item style={styles.searchBar} rounded >
+                <Icon name='ios-search' style={{color: '#c3c3c3'}} />
+                <Input rounded style={styles.searchInput} placeholder='Search'/>
+              </Item>
+            </Col>
+            <Col size={1}>
+              <Right>
+              <Icon name='ios-people' style={styles.AddContactIcon} />
+              </Right>
+            </Col>
+          </Grid>
+          <List>
+              <ItemPesan name="Muhammad Saidul Umam" />
+              <ItemPesan name="Nemixe" />
+              <ItemPesan name="Mas Bro" />
+              <ItemPesan name="Skyrie" />
+              <ItemPesan name="CatBuzz" />
+              <ItemPesan name="Asmorb" />
+              <ItemPesan name="Loctas" />
+              {console.log("List Sukses")}
+            </List>
         </Content>
       </Container>
     );
