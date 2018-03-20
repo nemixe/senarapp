@@ -20,27 +20,27 @@ function startApp() {
         tabs:[{
             label: 'Beranda',
             screen: 'senarapp.Beranda',
-            icon: require('../img/Home.png'),
+            icon: require('../src/assets/img/Home.png'),
             navigatorStyle
         },{
             label: 'Transaksi',
             screen: 'senarapp.Transaksi',
-            icon: require('../img/Transaction.png'),
+            icon: require('../src/assets/img/Transaction.png'),
             navigatorStyle
         },{
             label: 'Linimasa',
             screen: 'senarapp.Linimasa',
-            icon: require('../img/Timeline.png'),
+            icon: require('../src/assets/img/Timeline.png'),
             navigatorStyle
         },{
             label: 'Pesan',
             screen: 'senarapp.Pesan',
-            icon: require('../img/Message.png'),
+            icon: require('../src/assets/img/Message.png'),
             navigatorStyle
         },{
             label: 'Profil',
             screen: 'senarapp.Profil',
-            icon: require('../img/User.png'),
+            icon: require('../src/assets/img/User.png'),
             navigatorStyle
         }],
         appStyle: {
