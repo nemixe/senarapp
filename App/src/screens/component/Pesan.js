@@ -15,40 +15,43 @@ import {
   Input,
   Item,
   Icon,
-  Grid,Col
 } from 'native-base'
 import Nav from './subComponent/Nav'
 import ItemPesan from './subComponent/item'
 import styles from '../styles'
 
 export default class Pesan extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      name: 'Search',
+    }
+  }
   render() {
     return (
       <Container>
         <Nav name="Pesan" />
         <Content>
-          <Grid style={styles.searchPesan} >
-            <Col size={6}>
+          <View style={styles.searchPesan}>
+            <View style={{flex:6}}>
               <Item style={styles.searchBar} rounded >
                 <Icon name='ios-search' style={{color: '#c3c3c3'}} />
-                <Input rounded style={styles.searchInput} placeholder='Search'/>
+                <Input rounded style={styles.searchInput} placeholder={this.state.name} onChangeText={(name)=>{this.setState({name})}}/>
               </Item>
-            </Col>
-            <Col size={1}>
-              <Right>
-              <Icon name='ios-people' style={styles.AddContactIcon} />
-              </Right>
-            </Col>
-          </Grid>
+            </View>
+            <View style={styles.addContact}>
+                <Icon name='ios-people' style={styles.addContactIcon} />
+            </View>
+          </View>
           <List>
-              <ItemPesan name="Muhammad Saidul Umam" />
+              <ItemPesan name={this.state.name} />
               <ItemPesan name="Nemixe" />
               <ItemPesan name="Mas Bro" />
               <ItemPesan name="Skyrie" />
               <ItemPesan name="CatBuzz" />
               <ItemPesan name="Asmorb" />
               <ItemPesan name="Loctas" />
-              {console.log("List Sukses")}
+              {console.log(this.state.name)}
             </List>
         </Content>
       </Container>

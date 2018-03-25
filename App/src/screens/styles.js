@@ -1,3 +1,5 @@
+import { Row } from 'native-base';
+
 'use strict'
 let React = require('react-native')
 let { StyleSheet } = React
@@ -23,7 +25,13 @@ module.exports = StyleSheet.create({
     searchPesan: {
       paddingLeft:5, 
       paddingRight:5, 
-      flex:0
+      flex:1,
+      flexDirection: 'row'
+    },
+    addContact: {
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'center'
     },
     searchBar: {
       marginBottom:10, 
@@ -36,7 +44,7 @@ module.exports = StyleSheet.create({
       height:32, 
       fontSize: 14
     },
-    AddContactIcon: {
+    addContactIcon: {
       color: '#c3c3c3', 
       paddingTop:12
     }
